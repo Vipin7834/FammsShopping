@@ -1,0 +1,625 @@
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            /* border: 2px solid black; */
+            margin-left: 75px;
+            margin-right: 25px;
+            padding-top: 25px;
+
+        }
+
+        .nav img {
+            width: 200px;
+            margin-right: 50px;
+            margin-right: 200px;
+
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav li {
+            font-size: 18px;
+            margin-left: 50px;
+            font-weight: 550;
+
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav li a:hover {
+            color: rgb(194, 55, 55);
+        }
+
+        .section1 .col1 h1:first-child {
+            font-size: 70px;
+            color: rgb(241, 57, 118);
+        }
+
+        .section1 .col1 {
+            /* border: 2px solid black; */
+            margin-left: 150px;
+            margin-top: 20px;
+            padding-top: 50px;
+        }
+
+        .section1 {
+            /* border: 2px solid black; */
+            background-image: url('slider-bg.jpg');
+            background-size: cover;
+            height: 500px;
+        }
+
+        .section1 .col1 button {
+            padding: 10px 35px;
+            margin-top: 10px;
+            background-color: rgb(241, 57, 118);
+            border: none;
+            color: white;
+            font-weight: 1000px;
+            font-size: 18px;
+        }
+
+        .section1 .col1 button:hover {
+            border: 2px solid rgb(241, 57, 118);
+            background-color: white;
+            color: rgb(241, 57, 118);
+            transition: 0.5s;
+        }
+
+        .section1 .col1 p {
+            font-size: 15px;
+            width: 500px;
+        }
+
+        .section2 {
+            /* border: 2px solid black; */
+        }
+
+        .section2 h1 {
+            font-size: 50px;
+            text-align: center;
+            margin: 40px;
+        }
+
+        .section2 .row {
+            display: flex;
+            /* border: 2px solid black; */
+            width: 65%;
+            margin-left: 18%;
+            gap: 25px;
+        }
+
+        .section2 .col {
+            background-color: rgb(19, 31, 59);
+            text-align: center;
+            margin: 5px;
+            padding: 25px;
+            height: 200px;
+            width: 250px;
+            border-radius: 5px;
+
+        }
+
+        .section2 .col h3 {
+            color: white;
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+
+        .section2 .col p {
+            color: white;
+        }
+
+        .section2 hr {
+            border: 3px solid rgb(241, 57, 118);
+            width: 60px;
+            margin-left: 48%;
+            margin-top: -30px;
+            margin-bottom: 50px;
+        }
+
+        .section3 {
+            /* background-image: url('arrival-bg.png');
+            background-size: cover; */
+            margin-top: 75px;
+            /* border: 2px solid black; */
+            height: 400px;
+            background-color: rgb(212, 209, 206);
+            display: flex;
+        }
+
+        .section3 img {
+            margin-left: 275px;
+        }
+
+        .section3 h1 {
+            font-size: 50px;
+            color: rgb(19, 31, 59);
+        }
+
+        .section3 p {
+            width: 500;
+        }
+
+        .section3 .content {
+            /* border: 2px solid black; */
+            margin-left: -200px;
+            padding-top: 80px;
+
+        }
+
+        .section3 .content button {
+            padding: 10px 35px;
+            margin-top: 10px;
+            background-color: rgb(241, 57, 118);
+            border: none;
+            color: white;
+            font-weight: 1000px;
+            font-size: 18px;
+        }
+
+        .section3 .content button:hover {
+            border: 2px solid rgb(241, 57, 118);
+            background-color: white;
+            color: rgb(241, 57, 118);
+            transition: 0.5s;
+        }
+
+        .section4 h2 {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+        .section4 hr {
+            border: 3px solid rgb(241, 57, 118);
+            width: 50px;
+            margin-left: 49%;
+
+            margin-bottom: 50px;
+        }
+
+        .section4 .row {
+            display: flex;
+            margin-left: 300px;
+            gap: 50px;
+        }
+
+        .section4 .row .col {
+            border: 5px solid rgb(246, 244, 240);
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            height: 300px;
+            width: 280px;
+        }
+
+        .section4 .row .col:hover {
+            /* border: 5px solid white; */
+            background-color: rgb(247, 246, 243);
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            height: 300px;
+            width: 280px;
+        }
+
+        .section4 .row .col img {
+            height: 250px;
+
+        }
+
+        .section4 .row .col img:hover {
+            height: 280px;
+
+        }
+
+        .section4 button {
+
+            margin-left: 46%;
+
+            padding: 15px 50px;
+            margin-top: 50px;
+            background-color: rgb(241, 57, 118);
+            border: none;
+            color: white;
+            font-weight: 1000px;
+            font-size: 18px;
+        }
+
+        .section4 button:hover {
+            border: 2px solid rgb(241, 57, 118);
+            background-color: white;
+            color: rgb(241, 57, 118);
+            transition: 0.5s;
+        }
+
+        .section5 {
+            /* border: 2px solid black; */
+            height: 390px;
+            background-color: rgb(212, 209, 206);
+        }
+
+        .section5 h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 70px;
+            font-size: 40px;
+            padding-top: 70px;
+        }
+
+        .section5 p {
+            width: 500px;
+            text-align: center;
+            margin-left: 34%;
+        }
+
+        .section5 input {
+            margin-top: 30px;
+            padding-left: 25px;
+            margin-left: 25%;
+            height: 50px;
+            width: 800px;
+            border-radius: 30px;
+            font-size: 20px;
+            border: none;
+        }
+
+        .section5 button {
+            margin-top: 10px;
+            padding: 10px 10px;
+            /* padding-left: 10px; */
+            margin-left: 44%;
+            height: 35px;
+            width: 250px;
+            border-radius: 30px;
+            background-color: rgb(241, 57, 118);
+            border: none;
+            color: white;
+            font-weight: 1000px;
+            font-size: 15px;
+        }
+
+        .section5 button:hover {
+            border: 2px solid rgb(241, 57, 118);
+            background-color: white;
+            color: rgb(241, 57, 118);
+            transition: 0.5s;
+        }
+
+        .section6 {
+            /* border: 2px solid black; */
+            height: 450px;
+
+
+        }
+
+        .section6 h1 {
+            margin-top: 50px;
+            text-align: center;
+            font-weight: 1000;
+            font-size: 50px;
+        }
+
+        .section6 hr {
+            border: 3px solid rgb(241, 57, 118);
+            width: 50px;
+            margin-left: 49%;
+
+            margin-bottom: 50px;
+        }
+
+        .section6 img {
+            margin-top: 25px;
+            border-radius: 50%;
+            height: 150px;
+            margin-left: 45%
+        }
+
+        .section6 h3 {
+            margin-top: 20px;
+            margin-left: 47%;
+        }
+
+        .section6 p {
+            margin-top: 10px;
+            width: 500px;
+            margin-left: 35%;
+        }
+
+        .section7 {
+            padding-left: 20%;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            /* border: 2px solid black; */
+            background-color: rgb(245, 242, 240);
+        }
+
+        .section7 .row img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .section7 .row {
+            display: flex;
+        }
+
+        .section7 .row p {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .section7 .row .col a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .section7 .row .col li {
+            margin-top: 10px;
+            margin-left: 100px;
+
+        }
+
+        .section7 .row .col h3 {
+            margin-left: 100px;
+        }
+
+        .section7 .row .col input {
+            margin-top: 25px;
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 5px;
+            border: none;
+            margin-left: 100px;
+        }
+
+        .section7 .row .col button {
+            height: 40px;
+            width: 80px;
+            border-radius: 5px;
+
+            background-color: rgb(241, 57, 118);
+            border: none;
+            color: white;
+            font-weight: 1000px;
+            font-size: 15px;
+
+
+        }
+        .section7 .row .col button:hover{
+            border: 2px solid rgb(241, 57, 118);
+            background-color: white;
+            color: rgb(241, 57, 118);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <div class="nav">
+        <ul type="none">
+            <li> <a href="#"><img src="logo.png" alt=""></a> </li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- banner section -->
+
+    <div class="section1">
+
+        <div class="col1">
+            <h1>Sale 20% Off</h1>
+            <h1 style="font-size: 70px;  color: rgb(19, 31, 59); letter-spacing: 1px;">On
+                Everthing</h1> <br>
+            <p>Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Nesciunt ipsum delectus dignissimos laboriosam! Sint quasi quam
+                sapiente, tempora enim accusamus quae architecto ratione ad impedit eaque, soluta perspiciatis
+                doloremque neque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ipsa laudantium
+                distinctio nulla amet expedita, cum beatae, quas dolore fuga, sequi incidunt. Ex quis optio rem
+                placeat ea totam similique.</p> <br>
+            <a href="#"> <button type="button">Shop Now</button></a>
+        </div>
+    </div>
+
+    <!-- section 2 -->
+
+    <div class="section2">
+        <h1>Why Shop With us</h1>
+        <hr>
+        <div class="row">
+
+            <div class="col">
+                <img src="icon1.png" alt="" style="height:50px;">
+                <h3>Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,Lorem </p>
+            </div>
+            <div class="col">
+                <img src="icon1.png" alt="" style="height: 50px;">
+                <h3>Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,Lorem </p>
+            </div>
+            <div class="col">
+                <img src="icon1.png" alt="" style="height: 50px">
+                <h3>Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,Lorem </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section 3 -->
+    <div class="section3">
+        <img src="arrival-bg.png" alt="" height="400px">
+
+        <div class="content">
+            <h1>#New Arrivals</h1>
+            <br>
+            <p>Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Nesciunt ipsum delectus dignissimos laboriosam! Sint quasi quam
+                sapiente, tempora enim accusamus quae architecto ratione ad impedit eaque, soluta perspiciatis
+            </p> <br>
+            <a href="#"> <button type="button">Shop Now</button></a>
+        </div>
+    </div>
+
+
+    <!-- secttion 4 -->
+    <div class="section4">
+        <h2>Our <span style="color:rgb(241, 57, 118)"> product</span></h2>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <img src="p1.png" alt="">
+                <p>Price: $200</p>
+            </div>
+            <div class="col">
+                <img src="p2.png" alt="">
+                <p>Price: $200</p>
+            </div>
+            <div class="col">
+                <img src="p3.png" alt="">
+                <p>Price: $200</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="p4.png" alt="">
+                <p>Price: $200</p>
+            </div>
+            <div class="col">
+                <img src="p5.png" alt="">
+                <p>Price: $200</p>
+            </div>
+            <div class="col">
+                <img src="p6.png" alt="">
+                <p>Price: $200</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="p7.png" alt="">
+                <p>Price: $200</p>
+            </div>
+            <div class="col">
+                <img src="p8.png" alt="">
+                <p>Price: $200</p>
+            </div>
+            <div class="col">
+                <img src="p9.png" alt="">
+                <p>Price: $200</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="p10.png" alt="">
+                <p>Price: $200</p>
+            </div>
+            <div class="col">
+                <img src="p11.png" alt="">
+                <p>Price: $200</p>
+            </div>
+            <div class="col">
+                <img src="p12.png" alt="">
+                <p>Price: $200</p>
+            </div>
+        </div>
+        <button type="button">View all products</button>
+    </div>
+
+
+
+    <!-- section 5 -->
+    <div class="section5">
+        <h1>Subscribe To Get Discount Offers</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure dolorum nemo inventore, delectus
+            dolores </p>
+        <input type="email" placeholder="Enter Your Email"><br><br>
+        <button type="button">SUBSCRIBE</button>
+    </div>
+
+    <!-- section 6 -->
+    <div class="section6">
+        <h1>Customer's Testimonial</h1>
+        <hr>
+
+        <img src="client.jpg" alt="">
+        <h3>Anna Trevor</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam ex, nesciunt ullam minus reprehenderit
+            consectetur natus blanditiis adipisci, alias totam magnam hic sed repellendus sint possimus similique
+            reiciendis quos.</p>
+    </div>
+
+
+    <!-- section 7 -->
+    <div class="section7">
+        <div class="row">
+            <div class="col">
+                <img src="logo.png" alt="">
+                <P> <strong>ADDRESS:</strong>28 White Tower, Street Name New York city, USA</P>
+                <p><strong>TELEPHONE:</strong> +91987658XXXX</p>
+                <p><strong>EMAIL:</strong>abc@gmail.com</p>
+            </div>
+            <div class="col">
+                <h3>MENU</h3>
+                <ul type="none">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>ACCOUNT</h3>
+                <ul type="none">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#">Widget</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>NEWSLETTER</h3>
+                <p style="margin-left: 100px;">Subscribe by our newsletter and get update protidin</p>
+                <input type="email" placeholder="Enter Your Main">
+                <button type="button">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
